@@ -1,2 +1,6 @@
 # DAQ
-Data Acquisition code and relevant libraries 
+Data aquisition code and transmission code for Baja Bruin Racing electronics. 
+
+# Systems
+
+
