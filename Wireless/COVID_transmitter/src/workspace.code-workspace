@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"name": "LoRa_testing",
+			"path": "..\\..\\..\\..\\..\\..\\Users\\Tommy\\Documents\\PlatformIO\\Projects\\LoRa_testing"
+		},
+		{
+			"name": "COVID_reciever",
+			"path": "..\\..\\COVID_reciever"
+		},
+		{
+			"name": "COVID_transmitter",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
