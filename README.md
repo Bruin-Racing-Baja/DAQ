@@ -3,7 +3,9 @@ Data aquisition code and transmission code for Baja Bruin Racing electronics.
 
 - [Model 21 Systems](#model-21-systems)
 - [Dictionary](#dictionary)
+
 Testing systems and their associated code will be each broken down in the DAQ repository.
+
 All scripts will be organized three main folders:
 - 'Wireless' contains code relevant to all wireless communications for the Bruin Racing, this will include but is not limited to LoRa, WiFi, and various RF modules.
 - 'Testing' contains the code relevant to each particular test. This will contain scripts and data for all tests ran during the 2021 design cycle.
