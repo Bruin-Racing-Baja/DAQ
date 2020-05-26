@@ -29,5 +29,5 @@ Naming things is half the fun of it, a comprehensive list will be here.
 - COVID - Communicating Onboard Vehicle Information Device
 - BUTT - Better Underside Teensy Terminal : Teensy 4.0 Hardware Adaptor (DEAD)
 - DAQ - Data Acquistion
-- SPICY - Sudden PressfIt Calamity detection System
+- SPICY - Sudden PressfIt Calamity detection sYstem
 
