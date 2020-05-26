@@ -17,13 +17,19 @@ int dio0 =2;        //requires interrupt capable pin
 //void onRecieve ();
 void setup() {
   // put your setup code here, to run once:
-  LoRa.begin(us_std_freq);
+  Serial.begin(115200);
+  Serial.println("Lora Reciever:");
+  if(!  LoRa.begin(us_std_freq))
+  {
+    Serial.println("Reciever Startup Failed");
+    while(1);
+  }
   LoRa.setPins(ss, reset, dio0);
   //Lora.onRecieve(onRecieve)
-  LoRa.recieve();
+ // LoRa.recieve();
 }
 void loop() {
-  // put your main code here, to run repeatedly:
+  /*
   char buffer [10];
   char b = 0;
   uint8_t index=0;
@@ -34,6 +40,19 @@ void loop() {
       index++;
     }
   //concatenate the bits read
-  
+  */
 
+
+ //parse packet
+ int packetSize = LoRa.parsePacket();
+ if(packetSize)
+ {
+   Serial.println("Packet Recieved");
+
+   while(Lora.available())
+   {
+     char incoming = (char)LoRa.read();
+     Serial.println(incoming);
+   }
+ }
 }
