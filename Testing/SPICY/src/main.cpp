@@ -1,7 +1,10 @@
 #include <Arduino.h>
+#include <OneWire.h>
 
+OneWire ds(10);
 void setup() {
   // put your setup code here, to run once:
+  Serial.begin(9600);
 }
 
 void loop() {
