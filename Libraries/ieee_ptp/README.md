@@ -12,3 +12,4 @@ General implementation of this library is a class containing all the functionali
 |  ptp_attatch | For master adds serial port, for slave adds serial port and interrupt pin functionality|
 |   set_frequency| changes how often the synchronization is done, default is the max value of 10 Hz   |
 | set_precision|  Sets maximum number of microseconds allowable for count to be off without timer adjustment. Default is 100 microseconds|
+|  ptp_detatch | For master stops synchronyzation, for slave single microcontroller runs async|
