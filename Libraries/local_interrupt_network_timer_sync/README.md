@@ -4,3 +4,8 @@ This is designed to be a lightweight library, that will use a master slave archi
 
 # API
 
+|  Function | Description  |
+|:---------:|:------------:|
+| constructor| initializes LINTS object to have all local parameters ready|
+|begin| starts timer for master, attatches interrupt for slave|
+| get_offsets| returns pointer to array of offsets, and changes length to be the length of the array, used for storing data on offsets|
