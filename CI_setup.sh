@@ -4,4 +4,10 @@
 # (libraries you are using in your ARDUINO_LIBS environemnt variable)
 mkdir dependencies
 platformio lib --storage-dir dependencies install "Adafruit GFX Library"
-export ARDUINO_LIB=dependencies/
+
+cd dependencies
+git clone https://github.com/adafruit/Adafruit_SSD1305.git
+cd -
+PWD=$(pwd)
+export ARDUINO_LIB="$PWD/dependencies"
+echo $ARDUINO_LIB

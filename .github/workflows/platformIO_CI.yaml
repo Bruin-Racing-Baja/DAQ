@@ -18,12 +18,20 @@ jobs:
     - name: Install libraries
       run: |
         bash CI_setup.sh
+        export ARDUINO_LIB=$(pwd)/dependencies
     - name: Run PlatformIO
       run: |
+        export ARDUINO_LIB=$(pwd)/dependencies
         platformio run -d Testing/SPICY > testing_spicy_log.txt
+        platformio run -d Wireless/COVID_reciever > covid_reciever_log.txt
     - name: Upload log file
       uses: actions/upload-artifact@v2
       with:
         name: SPICY_log
         path: testing_spicy_log.txt
+    - name: Upload log file
+      uses: actions/upload-artifact@v2
+      with:
+        name: SPICY_log
+        path: covid_reciever_log.txt
 
