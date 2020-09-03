@@ -7,9 +7,9 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-        -name: Check no formatting errors
-          shell: bash
-          run: ./run_clang.sh
+      - name: Check no formatting errors
+        shell: bash
+        run: ./run_clang.sh
 
   build:
 
