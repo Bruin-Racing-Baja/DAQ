@@ -10,7 +10,6 @@ jobs:
       - uses: actions/checkout@v1
       - name: Check no formatting errors
         run: |
-          ls
           bash run_clang.sh
 
   build:
@@ -28,7 +27,6 @@ jobs:
     - name: Install libraries
       run: |
         bash CI_setup.sh
-        export ARDUINO_LIB=$(pwd)/dependencies
     - name: Run PlatformIO
       run: |
         export ARDUINO_LIB=$(pwd)/dependencies
