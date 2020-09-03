@@ -8,12 +8,13 @@ jobs:
 
       steps:
       - name: Check no formatting errors
+      - uses: actions/checkout@v1
         run: |
           ls
           bash run_clang.sh
 
   build:
-
+    needs: [format]
     runs-on: ubuntu-latest
 
     steps:
