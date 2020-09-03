@@ -3,6 +3,14 @@ name: PlatformIO CI
 on: [push]
 
 jobs:
+  format:
+      runs-on: ubuntu-latest
+
+      steps:
+        -name: Check no formatting errors
+          shell: bash
+          run: ./run_clang.sh
+
   build:
 
     runs-on: ubuntu-latest
