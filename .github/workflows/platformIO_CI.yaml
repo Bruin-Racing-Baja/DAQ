@@ -7,8 +7,8 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-      - name: Check no formatting errors
       - uses: actions/checkout@v1
+      - name: Check no formatting errors
         run: |
           ls
           bash run_clang.sh
