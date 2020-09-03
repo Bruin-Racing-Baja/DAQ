@@ -9,7 +9,7 @@ jobs:
       steps:
       - name: Check no formatting errors
         shell: bash
-        run: ./run_clang.sh
+        run: bash run_clang.sh
 
   build:
 
